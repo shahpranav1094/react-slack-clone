@@ -1,6 +1,10 @@
 {
-  "main.css": "static/css/main.302d3d05.css",
-  "main.css.map": "static/css/main.302d3d05.css.map",
-  "main.js": "static/js/main.964144ec.js",
-  "main.js.map": "static/js/main.964144ec.js.map"
+  "runtime~main.js": "/react-slack-clone/static/js/runtime~main.09fa5f8c.js",
+  "runtime~main.js.map": "/react-slack-clone/static/js/runtime~main.09fa5f8c.js.map",
+  "vendors.js": "/react-slack-clone/static/js/vendors.c81ab3b7.chunk.js",
+  "vendors.js.map": "/react-slack-clone/static/js/vendors.c81ab3b7.chunk.js.map",
+  "main.css": "/react-slack-clone/static/css/main.5fe7f9c9.chunk.css",
+  "main.js": "/react-slack-clone/static/js/main.9ccb973a.chunk.js",
+  "main.js.map": "/react-slack-clone/static/js/main.9ccb973a.chunk.js.map",
+  "index.html": "/react-slack-clone/index.html"
 }
