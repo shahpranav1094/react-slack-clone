@@ -3,3 +3,5 @@ build
 client/static/index.js
 .DS_Store
 .idea/
+.lock
+package-lock.json

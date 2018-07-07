@@ -2,9 +2,9 @@ import Chatkit from '@pusher/chatkit'
 
 const credentials = {
   url: (id, token) =>
-  `https://us1.pusherplatform.io/services/chatkit_token_provider/v1/96859d3d-ca56-416a-8f81-76ab76210b85/token`,
-    //`https://chatkit-demo-server.herokuapp.com/token?user=${id}&token=${token}`,
-    instanceLocator: 'v1:us1:96859d3d-ca56-416a-8f81-76ab76210b85',
+  `https://us1.pusherplatform.io/services/chatkit_token_provider/v1/07b8c552-be6e-4e11-acc5-c4e864089aaf/token`,
+    // `https://chatkit-demo-server.herokuapp.com/token?user=${id}&token=${token}`,
+    instanceLocator: 'v1:us1:07b8c552-be6e-4e11-acc5-c4e864089aaf',
     //instanceLocator: 'v1:us1:05f46048-3763-4482-9cfe-51ff327c3f29',
 }
 
@@ -13,12 +13,12 @@ export default ({ state, actions }, { id, token }) =>
   new Chatkit.ChatManager({
     tokenProvider: new Chatkit.TokenProvider({ url: url(id, token) }),
     instanceLocator,
-    userId: "shah",
+    userId: id,
   })
     .connect({
       onUserStartedTyping: actions.isTyping,
       onUserStoppedTyping: actions.notTyping,
-      onAddedToRoom: actions.subscribeToRoom,
+      //onAddedToRoom: actions.subscribeToRoom,
       onRemovedFromRoom: actions.removeRoom,
       onUserCameOnline: actions.setUserPresence,
       onUserWentOffline: actions.setUserPresence,

@@ -2,6 +2,7 @@ import React from 'react'
 import style from './index.module.css'
 import { FileInput } from '../FileInput'
 
+
 export const CreateMessageForm = ({
   state: { user = {}, room = {}, message = '' },
   actions: { runCommand },

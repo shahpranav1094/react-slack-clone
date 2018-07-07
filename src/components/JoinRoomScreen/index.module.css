@@ -1,7 +1,7 @@
 .component {
   margin: auto;
   text-align: center;
-  color: #b6b6b6;
+  color: #f7f4f4;
 }
 
 .component > * + * {

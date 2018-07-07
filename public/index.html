@@ -21,40 +21,46 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <script src="https://unpkg.com/@pusher/chatkit"></script>
+
+    <script src="hostInterop_async.js" type="text/javascript"></script>
+
+    <script src="qrc:///qtwebchannel/qwebchannel.js" type="text/javascript"></script>
+   <!--<script src="https://unpkg.com/@pusher/chatkit"></script>-->
+    <!--<script src="myJs.js"></script>-->
     <script>
-      const tokenProvider = new Chatkit.TokenProvider
+   /*   const tokenProvider = new Chatkit.TokenProvider
       (
         {
-          url: `https://us1.pusherplatform.io/services/chatkit_token_provider/v1/96859d3d-ca56-416a-8f81-76ab76210b85/token`
+          url: `https://us1.pusherplatform.io/services/chatkit_token_provider/v1/07b8c552-be6e-4e11-acc5-c4e864089aaf/token`
         }
       )
 
       const chatManager = new Chatkit.ChatManager({
-        instanceLocator: "v1:us1:96859d3d-ca56-416a-8f81-76ab76210b85",
-        userId: "shah",
+        instanceLocator: "v1:us1:07b8c552-be6e-4e11-acc5-c4e864089aaf",
+        userId: 'virat18',
         tokenProvider
       })
 
         chatManager.connect()
         .then(currentUser => {
         currentUser.createRoom({
-          name: 'Telhara',
+          name: 'Torna',
           private: false,
-          addUserIds: ['pshaw', 'pranav']
+          addUserIds: ['virat18']
         })
           console.log('Successful connection', currentUser)
         })
         .catch(err => {
           console.log('Error on connection', err)
         })
+   */ </script>
+    <script>
+
     </script>
     <title>Pusher | Chatkit Demo</title>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
